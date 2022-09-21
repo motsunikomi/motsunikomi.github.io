@@ -1,13 +1,13 @@
 
+
+
 body {
     font-family: Tahoma, Verdana, sans-serif;
-    width: 98vw; /* the content area is a little smaller thanks to borders */
-    height: 98vh;
-    overflow: hidden;
+    min-height: 98vh; /* the content area is a little smaller thanks to borders */
 }
 
 .fixed-height {
-    height: 100%;
+    min-height: inherit;
 }
 
 .flex-fixed {
@@ -22,14 +22,6 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 1.2em;
-}
-
-.columns {
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 0px;
-    overflow: hidden;
-    column-gap: 1.25em;
 }
 
 .cards-layout {
@@ -53,10 +45,16 @@ body {
     display: inline-block;
 }
 
+.columns {
+    flex: 1 1 0px;
+    position: relative;
+}
+
 .deck-container {
+    height: 100%;
     width: 25em;
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    overflow: auto;
 }
 
 .deck {
@@ -71,6 +69,12 @@ body {
 .deck-birdpicker {
     width: 15em;
     display: inline-block;
+}
+
+.automa-container {
+    position: relative;
+    left: 25em;
+    width: 25em;
 }
 
 .cancelbutton {
