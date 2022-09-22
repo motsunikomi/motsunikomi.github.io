@@ -122,13 +122,17 @@ body {
     resize: none;
 }
 
+.birdviewer-button {
+    font-size: 90%;
+    padding: 0;
+}
+
 .birdviewer-card {
-    border-style: solid;
     width: 13em;
     aspect-ratio: 2.25 / 3.5; /* bridge sized cards */
     background-color: #f0f0f0;
     position: relative;
-    font-size: 90%;
+    text-align: left;
 }
 
 .birdviewer-header {
