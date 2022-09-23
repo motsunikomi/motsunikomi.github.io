@@ -61,9 +61,25 @@ body {
     overflow: auto;
 }
 
-.deck-card-index {
-    width: 2em;
-    display: inline-block;
+.deck-listitem-brown {
+    background-color: brown;
+    color: white;
+}
+
+.deck-listitem-cyan {
+    background-color: cyan;
+}
+
+.deck-listitem-pink {
+    background-color: pink;
+}
+
+.deck-listitem-white {
+    background-color: white;
+}
+
+.deck-listitem-yellow {
+    background-color: yellow;
 }
 
 .deck-birdpicker {
